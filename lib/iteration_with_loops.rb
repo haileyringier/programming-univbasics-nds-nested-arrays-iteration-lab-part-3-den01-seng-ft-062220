@@ -9,5 +9,6 @@ def join_nested_strings(src)
     element_index += 1 
   end
     row_index += 1 
-p final_sentence.join(" ")
+  end
+  p final_sentence.join(" ")
 end
