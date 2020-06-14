@@ -3,12 +3,13 @@ def join_nested_strings(src)
   final_sentence = []
   while row_index < src.count do
     element_index = 0
-    if src[row_index][element_index].class == String
+    while element_index < src[row_index].count do 
+      if src[row_index][element_index].class == String
       final_sentence << src[row_index][element_index]
-    end
+      end
     element_index += 1 
-  end
+    end
     row_index += 1 
   end
-  p final_sentence.join(" ")
+  return final_sentence.join(" ")
 end
